@@ -1,0 +1,17 @@
+
+# Environment / secrets
+.env
+
+# Logs (winston writes logs/combined.log)
+logs/
+
+# Custom TTACart report output
+tta-report/
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

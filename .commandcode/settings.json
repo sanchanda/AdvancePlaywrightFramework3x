@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "powershell",
+      "Shell(powershell -NoProfile -Command \"Get-ChildItem -Path 'c:\\LearningPlaywright\\AdvancePlaywrightFramework3x\\.github' -Recurse -Force | Select-Object -ExpandProperty FullName\")",
+      "Shell(powershell -NoProfile -Command \"$f='c:\\LearningPlaywright\\AdvancePlaywrightFramework3x\\src\\utils\\CustomReporter.ts'; (Get-Content $f).Count; Select-String -Path $f -Pattern 'export default|^}' | Select-Object -Last 6 | Select-Object LineNumber,Line\")",
+      "Shell(powershell -NoProfile -Command \"Get-ChildItem -Path 'c:\\LearningPlaywright\\AdvancePlaywrightFramework3x\\src' -Recurse -File -Force | Where-Object { $_.Name -ne '.gitkeep' } | Select-Object -ExpandProperty FullName\")"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}
